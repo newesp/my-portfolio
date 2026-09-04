@@ -293,7 +293,7 @@ onMounted(() => {
           <h3 data-i18n="ghSectionTitle">GitHub 專案</h3>
         </div>
         <div class="gh-search-wrap">
-          <inpu
+          <input
             type="text"
             id="project-search"
             class="gh-search-input"

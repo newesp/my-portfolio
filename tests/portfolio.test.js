@@ -175,7 +175,12 @@ test('Checklist: Navbar contains ordered section links including contact link', 
 });
 
 test('Checklist: GitHub dynamic loader and project pipeline preserved without regressions', () => {
-  assert.ok(htmlContent.includes('id="project-search"'), 'Project search input preserved');
+  assert.match(htmlContent, /<input\s[^>]*id="project-search"/, 'Native project search input preserved');
+  assert.match(
+    htmlContent,
+    /elements\.search\.addEventListener\(['"]input['"]/,
+    'Project search input handler preserved',
+  );
   assert.ok(htmlContent.includes('id="project-list"'), 'Project list container preserved');
   assert.ok(htmlContent.includes('id="pagination"'), 'Pagination container preserved');
   assert.ok(htmlContent.includes('/api/github-repos'), 'API url preserved');
