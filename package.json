@@ -1,7 +1,8 @@
 {
   "name": "my-protfolio",
-  "private": true,
   "version": "1.0.0",
+  "description": "Song Ching Lin's software engineering portfolio built with Vue 3, Vite & Vercel — featuring MarTech, automation, and AI engineering.",
+  "private": true,
   "type": "module",
   "engines": {
     "node": ">=22.12.0"
