@@ -284,13 +284,17 @@ test('vercel.json configures redirect from scl-protfolio.vercel.app to songching
   assert.equal(redirectRule.permanent, true);
 });
 
-test('Mobile RWD: Horizontal scroll is prevented via global and responsive CSS constraints', () => {
+test('Mobile RWD: Horizontal scroll is prevented and sticky header works via overflow-x: clip', () => {
   const css = fs.readFileSync(path.resolve('src/styles.css'), 'utf8');
 
-  // Verify root and body overflow-x hidden & max-width constraints
-  assert.match(css, /html,\s*body\s*\{[^}]*overflow-x:\s*hidden/);
+  // Verify root and body use overflow-x: clip so position: sticky is preserved
+  assert.match(css, /html,\s*body\s*\{[^}]*overflow-x:\s*clip/);
   assert.match(css, /html,\s*body\s*\{[^}]*max-width:\s*100%/);
-  assert.match(css, /#app,\s*\.shell\s*\{[^}]*overflow-x:\s*hidden/);
+  assert.match(css, /body\s*\{[^}]*overflow-x:\s*clip/);
+
+  // Verify header has sticky positioning enabled
+  assert.match(css, /\.nav\s*\{[^}]*position:\s*sticky/);
+  assert.match(css, /\.nav\s*\{[^}]*top:\s*0/);
 
   // Verify hero-mantra SVG overflow is clipped
   assert.match(css, /\.hero-mantra\s*\{[^}]*overflow:\s*hidden/);

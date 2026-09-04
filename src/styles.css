@@ -49,7 +49,7 @@
 html, body {
   background: var(--paper);
   color: var(--ink);
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 body {
@@ -58,12 +58,11 @@ body {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
   position: relative;
 }
 #app, .shell {
-  overflow-x: hidden;
   max-width: 100%;
   width: 100%;
 }
@@ -2005,6 +2004,7 @@ footer {
 
 /* Mobile Responsive Navigation */
 @media (max-width: 880px) {
+  .nav { padding: 14px 0; }
   .nav-inner { flex-wrap: wrap; gap: 12px; }
   .nav-links { display: flex !important; overflow-x: auto; padding-bottom: 4px; gap: 16px; width: 100%; -webkit-overflow-scrolling: touch; }
   .nav-links li a { font-size: 13px; white-space: nowrap; }
