@@ -46,7 +46,12 @@
   outline: 3px solid var(--coral);
   outline-offset: 4px;
 }
-html, body { background: var(--paper); color: var(--ink); }
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  overflow-x: hidden;
+  max-width: 100%;
+}
 body {
   font-family: var(--body);
   font-size: 16px;
@@ -54,7 +59,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  max-width: 100%;
   position: relative;
+}
+#app, .shell {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* paper texture overlay across the whole page */
@@ -508,7 +519,7 @@ body::before {
 }
 .hero-mantra {
   z-index: 2;
-  overflow: visible;
+  overflow: hidden;
   color: #6d685d;
   pointer-events: none;
 }
@@ -1902,10 +1913,26 @@ footer {
     max-height: none;
     aspect-ratio: 1 / 1;
     margin-right: 0;
+    overflow: hidden;
   }
   .hero-visual {
     width: 100%;
     height: auto;
+    overflow: hidden;
+  }
+  /* Prevent horizontal offset from data-reveal from stretching the mobile viewport */
+  [data-reveal='left'],
+  [data-reveal='right'] {
+    translate: 0 24px;
+  }
+  /* Hide decorative ribbons that extend past card borders */
+  .capabilities-art .ribbon,
+  .cta-art .ribbon {
+    display: none;
+  }
+  .nav-inner > nav {
+    width: 100%;
+    min-width: 0;
   }
   /* wire — stack the field label above the marquee rows */
   .wire-inner { grid-template-columns: 1fr; gap: 14px; }
@@ -1926,7 +1953,30 @@ footer {
   .method-step p { max-width: none; }
   .pills { justify-content: flex-start; }
   section { padding: 80px 0; }
-  .topbar-inner { font-size: 9px; }
+  .hero-actions,
+  .cta-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .topbar-sub { display: none; }
+  .topbar-inner {
+    font-size: 9px;
+    letter-spacing: 0.05em;
+    gap: 8px;
+  }
+  .topbar-inner > span:first-child {
+    white-space: nowrap;
+    min-width: 0;
+  }
+  .topbar-inner .right {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 360px) {
+  .topbar-status [data-i18n='topbarStatus'] {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

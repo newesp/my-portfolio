@@ -13,10 +13,10 @@ onMounted(() => {
 
 <div class="topbar" data-od-id="topbar">
   <div class="container topbar-inner">
-    <span><b>SCL / 2026</b> &nbsp;·&nbsp; Vol. 01 / Portfolio</span>
+    <span><b>SCL / 2026</b><span class="topbar-sub"> &nbsp;·&nbsp; Vol. 01 / Portfolio</span></span>
     <span class="mid"><span>Filed under <b class="coral" data-i18n="topbarFiledUnder">工程 · 自動化</b></span><span data-i18n="topbarLocation">台北 · 可遠端協作</span></span>
     <span class="right">
-      <span><span class="pulse"></span><span data-i18n="topbarStatus">目前可聯絡</span></span>
+      <span class="topbar-status"><span class="pulse"></span><span data-i18n="topbarStatus">目前可聯絡</span></span>
       <span>
         <button type="button" class="lang-btn active" data-lang="zh-Hant">繁中</button>
         ·

@@ -283,3 +283,28 @@ test('vercel.json configures redirect from scl-protfolio.vercel.app to songching
   assert.equal(redirectRule.destination, 'https://songchinglin-portfolio.vercel.app/$1');
   assert.equal(redirectRule.permanent, true);
 });
+
+test('Mobile RWD: Horizontal scroll is prevented via global and responsive CSS constraints', () => {
+  const css = fs.readFileSync(path.resolve('src/styles.css'), 'utf8');
+
+  // Verify root and body overflow-x hidden & max-width constraints
+  assert.match(css, /html,\s*body\s*\{[^}]*overflow-x:\s*hidden/);
+  assert.match(css, /html,\s*body\s*\{[^}]*max-width:\s*100%/);
+  assert.match(css, /#app,\s*\.shell\s*\{[^}]*overflow-x:\s*hidden/);
+
+  // Verify hero-mantra SVG overflow is clipped
+  assert.match(css, /\.hero-mantra\s*\{[^}]*overflow:\s*hidden/);
+
+  // Verify mobile data-reveal animations avoid horizontal offset
+  assert.match(css, /@media\s*\(max-width:\s*880px\)[\s\S]*?\[data-reveal=['"]left['"]\],\s*\[data-reveal=['"]right['"]\]\s*\{\s*translate:\s*0\s+24px;/);
+
+  // Verify off-card ribbons are hidden on mobile to prevent overflow
+  assert.match(css, /@media\s*\(max-width:\s*880px\)[\s\S]*?\.capabilities-art\s+\.ribbon,\s*\.cta-art\s+\.ribbon\s*\{\s*display:\s*none;\s*\}/);
+
+  // Verify hero visual container is contained
+  assert.match(css, /@media\s*\(max-width:\s*880px\)[\s\S]*?\.hero-visual\s*\{[^}]*overflow:\s*hidden/);
+
+  // Verify action buttons wrap on mobile
+  assert.match(css, /@media\s*\(max-width:\s*560px\)[\s\S]*?\.hero-actions,\s*\.cta-actions\s*\{\s*flex-wrap:\s*wrap;/);
+});
+
