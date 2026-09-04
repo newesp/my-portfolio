@@ -271,3 +271,15 @@ test('Checklist: Certifications section positioned after Skills, with iPAS crede
   // Verify no <img> tags in certifications section
   assert.ok(!/<img\s/i.test(certsHtml), 'Certifications section must not embed full <img> tags');
 });
+
+test('vercel.json configures redirect from scl-protfolio.vercel.app to songchinglin-portfolio.vercel.app', () => {
+  const vercelConfig = JSON.parse(fs.readFileSync(path.resolve('vercel.json'), 'utf8'));
+  assert.ok(Array.isArray(vercelConfig.redirects), 'redirects array exists');
+  const redirectRule = vercelConfig.redirects.find(
+    (r) => r.has && r.has.some((h) => h.type === 'host' && h.value === 'scl-protfolio.vercel.app'),
+  );
+  assert.ok(redirectRule, 'redirect rule for scl-protfolio.vercel.app exists');
+  assert.equal(redirectRule.source, '/(.*)');
+  assert.equal(redirectRule.destination, 'https://songchinglin-portfolio.vercel.app/$1');
+  assert.equal(redirectRule.permanent, true);
+});
