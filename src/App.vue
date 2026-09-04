@@ -38,11 +38,11 @@ onMounted(() => {
     </a>
     <nav aria-label="主要導覽">
       <ul class="nav-links">
-        <li><a href="#professional-work"><span data-i18n="navWork">專業工作</span><span class="num">01</span></a></li>
-        <li><a href="#projects"><span data-i18n="navProjects">個人專案</span><span class="num">02</span></a></li>
-        <li><a href="#skills"><span data-i18n="navSkills">專業技能</span><span class="num">03</span></a></li>
-        <li><a href="#certifications"><span data-i18n="navCerts">證照</span><span class="num">04</span></a></li>
-        <li><a href="#contact"><span data-i18n="navContact">聯絡</span><span class="num">05</span></a></li>
+        <li><a href="#professional-work"><span data-i18n="navWork">專業工作</span></a></li>
+        <li><a href="#projects"><span data-i18n="navProjects">個人專案</span></a></li>
+        <li><a href="#skills"><span data-i18n="navSkills">專業技能</span></a></li>
+        <li><a href="#certifications"><span data-i18n="navCerts">證照</span></a></li>
+        <li><a href="#contact"><span data-i18n="navContact">聯絡</span></a></li>
       </ul>
     </nav>
     <div class="nav-side">
