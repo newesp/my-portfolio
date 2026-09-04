@@ -58,7 +58,7 @@ onMounted(() => {
     <div class="hero-copy">
       <span class="label" data-reveal><span data-i18n="heroLabel">自動化與全端工程師</span> <span class="ix">· Nº 01</span></span>
       <h2 class="display" data-reveal data-i18n="heroTitle">把複雜流程做成<em>可靠系統</em><span class="dot">.</span></h2>
-      <p class="lead" data-reveal data-i18n="heroLede">我主要做 MarTech、系統整合與 AI 輔助開發，從釐清需求、寫程式、測試到上線，讓流程真的能用，也方便後續維護。</p>
+      <p class="lead" data-reveal data-i18n="heroLede">專精於全端開發、 MarTech、API 整合與 AI 輔助開發，從釐清需求、開規格、寫程式、測試到上線，讓概念落地。</p>
       <div class="hero-actions" data-reveal>
         <a class="btn btn-primary" data-od-id="cta-view-projects" href="#projects"><span data-i18n="heroCtaProj">查看專案</span> <span class="arrow">→</span></a>
         <a class="btn btn-ghost" href="https://github.com/newesp" target="_blank" rel="noopener noreferrer"><span data-i18n="heroCtaGithub">GitHub 個人頁面</span> <span class="arrow">↗</span></a>
