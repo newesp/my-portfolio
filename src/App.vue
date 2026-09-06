@@ -175,10 +175,12 @@ onMounted(() => {
     <div class="labs-grid">
       <!-- Card 1: Online Donation -->
       <article class="lab" data-category="work" data-reveal data-od-id="lab-donation">
-        <div class="lab-img">
-          <span class="badge" data-i18n="badgeWork">網站</span>
-          <img src="/assets/images/lab-1.png" width="768" height="1024" alt="抽象編輯拼貼，象徵線上捐款流程" />
-        </div>
+        <a class="lab-img-link" href="https://www.greenpeace.org.tw/donation-general-general" target="_blank" rel="noopener noreferrer" aria-label="查看 Greenpeace Taiwan 線上捐款頁面">
+          <div class="lab-img">
+            <span class="badge" data-i18n="badgeWork">網站</span>
+            <img src="/assets/images/lab-1.png" width="768" height="1024" alt="抽象編輯拼貼，象徵線上捐款流程" />
+          </div>
+        </a>
         <div class="num-row"><span>Nº 01</span><span>Greenpeace</span></div>
         <h4 data-i18n="rep1Title">🌳 線上捐款頁面</h4>
         <p data-i18n="rep1Desc">參與綠色和平線上募款網站的開發與維護，負責頁面實作、數據與事件追蹤，以及與既有數位平台和相關系統的串接。</p>
@@ -187,10 +189,12 @@ onMounted(() => {
 
       <!-- Card 2: Ocean Protection Petition -->
       <article class="lab" data-category="work" data-reveal data-od-id="lab-oceans">
-        <div class="lab-img">
-          <span class="badge" data-i18n="badgeWork">網站</span>
-          <img src="/assets/images/lab-2.png" width="768" height="1024" alt="抽象編輯拼貼，象徵海洋保護倡議" />
-        </div>
+        <a class="lab-img-link" href="https://www.greenpeace.org.tw/petition-oceans-sanctuaries-mw" target="_blank" rel="noopener noreferrer" aria-label="查看 Greenpeace Taiwan 海洋保護連署頁面">
+          <div class="lab-img">
+            <span class="badge" data-i18n="badgeWork">網站</span>
+            <img src="/assets/images/lab-2.png" width="768" height="1024" alt="抽象編輯拼貼，象徵海洋保護倡議" />
+          </div>
+        </a>
         <div class="num-row"><span>Nº 02</span><span>Greenpeace</span></div>
         <h4 data-i18n="rep2Title">🐋 海洋保護連署頁面</h4>
         <p data-i18n="rep2Desc">參與線上連署頁面的開發與維護，追蹤數據、支持者紀錄與後續 CRM／行銷流程。</p>
@@ -199,10 +203,12 @@ onMounted(() => {
 
       <!-- Card 3: myBookLM -->
       <article class="lab" data-category="ai" data-reveal data-od-id="lab-mybooklm">
-        <div class="lab-img">
-          <span class="badge">AI / RAG</span>
-          <img src="/assets/images/lab-3.png" width="768" height="1024" alt="抽象編輯拼貼，象徵知識庫問答" />
-        </div>
+        <a class="lab-img-link" href="https://github.com/newesp/myBookLM" target="_blank" rel="noopener noreferrer" aria-label="查看 myBookLM 原始碼庫">
+          <div class="lab-img">
+            <span class="badge">AI / RAG</span>
+            <img src="/assets/images/lab-3.png" width="768" height="1024" alt="抽象編輯拼貼，象徵知識庫問答" />
+          </div>
+        </a>
         <div class="num-row"><span>Nº 03</span><span>myBookLM</span></div>
         <h4 data-i18n="cardMyBookLMTitle">myBookLM</h4>
         <p data-i18n="cardMyBookLMDesc">可在本機使用的 NotebookLM 替代方案。使用者可自行選擇 AI Provider，匯入 PDF 建立知識庫，再用 RAG 檢索與問答。</p>
@@ -211,10 +217,12 @@ onMounted(() => {
 
       <!-- Card 4: ai-social-publisher -->
       <article class="lab" data-category="ai" data-reveal data-od-id="lab-social">
-        <div class="lab-img">
-          <span class="badge">AI / Agent</span>
-          <img src="/assets/images/lab-4.png" width="768" height="1024" alt="抽象編輯拼貼，象徵社群媒體發布平台" />
-        </div>
+        <a class="lab-img-link" href="https://github.com/newesp/ai-social-publisher" target="_blank" rel="noopener noreferrer" aria-label="查看 ai-social-publisher 原始碼庫">
+          <div class="lab-img">
+            <span class="badge">AI / Agent</span>
+            <img src="/assets/images/lab-4.png" width="768" height="1024" alt="抽象編輯拼貼，象徵社群媒體發布平台" />
+          </div>
+        </a>
         <div class="num-row"><span>Nº 04</span><span data-i18n="cardSocialTitle">AI 社群發文與 AI LINE 客服</span></div>
         <h4 data-i18n="cardSocialTitle">AI 社群發文與 AI LINE 客服</h4>
         <p data-i18n="cardSocialDesc">產生社群貼文與圖片並排程發布；LINE AI 客服可自動回覆，需要時由真人接手。</p>
@@ -223,10 +231,12 @@ onMounted(() => {
 
       <!-- Card 5: GitHub Public Repos -->
       <article class="lab" data-category="all" data-reveal data-od-id="lab-github">
-        <div class="lab-img">
-          <span class="badge" data-i18n="badgeCode">Github</span>
-          <img src="/assets/images/lab-5.png" width="768" height="1024" alt="抽象編輯拼貼，象徵公開原始碼專案" />
-        </div>
+        <a class="lab-img-link" href="https://github.com/newesp" target="_blank" rel="noopener noreferrer" aria-label="查看 GitHub 公開原始碼庫">
+          <div class="lab-img">
+            <span class="badge" data-i18n="badgeCode">Github</span>
+            <img src="/assets/images/lab-5.png" width="768" height="1024" alt="抽象編輯拼貼，象徵公開原始碼專案" />
+          </div>
+        </a>
         <div class="num-row"><span>Nº 05</span><span>GitHub</span></div>
         <h4 data-i18n="cardGithubTitle">公開原始碼庫</h4>
         <p data-i18n="cardGithubDesc">收錄我做過的 AI、自動化、資料處理與全端開發專案。</p>
@@ -251,36 +261,40 @@ onMounted(() => {
             <h2 data-i18n="featTitle">兩個有趣的 <em>AI 專案</em><span class="dot">.</span></h2>
             <a class="work-link" data-i18n="featViewAll" href="https://github.com/newesp" target="_blank" rel="noopener noreferrer">查看所有公開專案</a>
           </div>
-        <div class="work-card" data-reveal data-od-id="project-novel-generator">
-          <div class="label-row">
-            <span class="small-label" data-i18n="feat1Tag">AI 影片展示</span>
-            <span class="index">01 / 02</span>
-          </div>
-          <h3 data-i18n="feat1Title">小說生成器</h3>
-          <p data-i18n="feat1Desc">從故事、章節與分鏡開始，接著產生 AI 圖像，最後輸出影片。</p>
-          <div class="img">
-            <img src="/assets/images/work-1.png" width="480" height="360" alt="novel-generator 完成影片的 YouTube 縮圖" />
-          </div>
-          <div class="meta-row">
+          <div class="work-card" data-reveal data-od-id="project-novel-generator">
+            <div class="label-row">
+              <span class="small-label" data-i18n="feat1Tag">AI 影片展示</span>
+              <span class="index">01 / 02</span>
+            </div>
+            <h3 data-i18n="feat1Title">小說生成器</h3>
+            <p data-i18n="feat1Desc">從故事、章節與分鏡開始，接著產生 AI 圖像，最後輸出影片。</p>
+            <a class="work-img-link" href="https://youtu.be/m1XNqvH0ew8" target="_blank" rel="noopener noreferrer" aria-label="觀看小說生成器展示影片">
+              <div class="img">
+                <img src="/assets/images/work-1.png" width="480" height="360" alt="novel-generator 完成影片的 YouTube 縮圖" />
+              </div>
+            </a>
+            <div class="meta-row">
               <a href="https://youtu.be/m1XNqvH0ew8" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;" data-i18n="feat1Cta1">觀看影片 ↗</a>
               <a href="https://github.com/newesp/novel-generator" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;" data-i18n="feat1Cta2">查看原始碼庫 ↗</a>
             </div>
-        </div>
-        <div class="work-card alt" data-reveal data-od-id="project-lottery-ml">
-          <div class="label-row">
-            <span class="small-label" data-i18n="feat2Tag">機器學習案例</span>
-            <span class="index">02 / 02</span>
           </div>
-          <h3 data-i18n="feat2Title">台灣威力彩機器學習案例</h3>
-          <p data-i18n="feat2Desc">以台灣威力彩資料示範收集、清洗與模型訓練；重點是完整的機器學習流程，不宣稱能預測開獎結果。</p>
-          <div class="img">
-            <img src="/assets/images/work-2.png" width="1200" height="600" alt="Lottery-ML-Portfolio GitHub 專案預覽圖" />
-          </div>
-          <div class="meta-row">
+          <div class="work-card alt" data-reveal data-od-id="project-lottery-ml">
+            <div class="label-row">
+              <span class="small-label" data-i18n="feat2Tag">機器學習案例</span>
+              <span class="index">02 / 02</span>
+            </div>
+            <h3 data-i18n="feat2Title">台灣威力彩機器學習案例</h3>
+            <p data-i18n="feat2Desc">以台灣威力彩資料示範收集、清洗與模型訓練；重點是完整的機器學習流程，不宣稱能預測開獎結果。</p>
+            <a class="work-img-link" href="https://newesp.github.io/Lottery-ML-Portfolio/" target="_blank" rel="noopener noreferrer" aria-label="查看台灣威力彩專案展示">
+              <div class="img">
+                <img src="/assets/images/work-2.png" width="1200" height="600" alt="Lottery-ML-Portfolio GitHub 專案預覽圖" />
+              </div>
+            </a>
+            <div class="meta-row">
               <a href="https://newesp.github.io/Lottery-ML-Portfolio/" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;" data-i18n="feat2Cta1">專案展示 ↗</a>
               <a href="https://github.com/newesp/Lottery-ML-Portfolio" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;" data-i18n="feat2Cta2">查看原始碼庫 ↗</a>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>

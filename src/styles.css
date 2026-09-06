@@ -1946,7 +1946,6 @@ footer {
 @media (max-width: 560px) {
   .container { padding: 0 16px; }
   .hero h1, .hero h2 { font-size: 38px; }
-  .labs-grid { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr; }
   .method-grid { grid-template-columns: 1fr; gap: 36px; }
   .method-step p { max-width: none; }
@@ -2010,6 +2009,7 @@ footer {
   .nav-links li a { font-size: 13px; white-space: nowrap; }
   .nav-cta { display: inline-flex !important; font-size: 11px; padding: 4px 8px; }
   .brand-meta { display: none !important; }
+  .nav-side { display: none !important; }
 }
 
 /* Custom Additions for Portfolio Integration */
@@ -2422,4 +2422,75 @@ footer {
 .cert-btn.ghost:hover {
   border-color: var(--coral);
   color: var(--coral);
+}
+
+/* Links for Project Images */
+.lab-img-link,
+.work-img-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.lab-img-link .lab-img,
+.work-img-link .img {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.lab-img-link:hover .lab-img,
+.work-img-link:hover .img {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(44, 38, 30, 0.12);
+}
+.lab-img-link:hover .lab-img img,
+.work-img-link:hover .img img {
+  transform: scale(1.02);
+  transition: transform 0.25s ease;
+}
+.lab-img img,
+.work-card .img img {
+  transition: transform 0.25s ease;
+}
+
+/* Option C: Mobile Peek Carousel for Labs Cards */
+@media (max-width: 768px) {
+  .labs-grid {
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 8px 24px 24px 0;
+    margin-left: 0;
+    margin-right: -24px;
+    scrollbar-width: none;
+  }
+  .labs-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .labs-grid > .lab {
+    flex: 0 0 78vw;
+    max-width: 310px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 14px rgba(44, 38, 30, 0.05);
+  }
+  .labs-grid > .lab .lab-img {
+    margin-bottom: 14px;
+  }
+  .labs-grid > .lab .arrow-mark {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .labs-grid {
+    padding-right: 16px;
+    margin-left: 0;
+    margin-right: -16px;
+  }
 }

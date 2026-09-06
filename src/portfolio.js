@@ -519,7 +519,7 @@
 (() => {
     'use strict';
 
-    const PAGE_SIZE = 30;
+    const PAGE_SIZE = 6;
     const API_URL = '/api/github-repos';
     const BLOCKED_TOPICS = new Set(['practice', 'do-not-use', 'personal']);
 
