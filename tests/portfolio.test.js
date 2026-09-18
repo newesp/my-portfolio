@@ -124,7 +124,7 @@ test('Checklist: Professional Work section positioned before Projects with Green
 
   // Verify collage artwork image exists in professional-work
   const profWorkBlock = htmlContent.substring(profWorkIndex, projectsIndex);
-  assert.ok(profWorkBlock.includes('assets/images/capabilities.png'), 'Professional Work section contains capabilities artwork');
+  assert.ok(profWorkBlock.includes('assets/images/capabilities.webp') || profWorkBlock.includes('assets/images/capabilities.png'), 'Professional Work section contains capabilities artwork');
 });
 
 test('Checklist: Representative Pages under Projects with 🌳 Donation & 🐋 Ocean Petition', () => {

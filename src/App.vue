@@ -69,7 +69,7 @@ onMounted(() => {
       <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
       <span class="annot annot-tl coord">FIG. 01 / SCL-26</span><span class="annot annot-tr">Plate Nº 01</span><span class="annot annot-bl coord">TAIPEI · TW</span><span class="annot annot-br">Loop Engineering</span>
       <div class="hero-visual">
-        <img class="hero-image" src="/assets/images/hero-1.png" width="1024" height="1024" alt="抽象紙雕拼貼，象徵 AI、自動化與系統思考" />
+        <img class="hero-image" src="/assets/images/hero-1.webp" width="1024" height="1024" fetchpriority="high" decoding="async" alt="抽象紙雕拼貼，象徵 AI、自動化與系統思考" />
         <svg class="hero-mantra" viewBox="0 0 1024 1024" aria-hidden="true">
           <defs>
             <path id="hero-mantra-path" d="M 630,118 A 362,362 0 1,1 629.9,118" />
@@ -81,7 +81,7 @@ onMounted(() => {
             </text>
           </g>
         </svg>
-        <img class="hero-cloud" src="/assets/images/hero-cloud.png" width="1024" height="1024" alt="" aria-hidden="true" />
+        <img class="hero-cloud" src="/assets/images/hero-cloud.webp" width="1024" height="1024" decoding="async" alt="" aria-hidden="true" />
       </div>
       <div class="index"><span><span class="n">01</span><span data-i18n="stage1">探索</span></span><span class="on"><span class="n">02</span><span data-i18n="stage2">規格</span></span><span><span class="n">03</span><span data-i18n="stage3">實作</span></span><span><span class="n">04</span><span data-i18n="stage4">驗收</span></span></div>
     </div>
@@ -118,7 +118,7 @@ onMounted(() => {
   <div class="container capabilities-grid">
     <div class="capabilities-art" data-reveal="left">
       <span class="corner tl"></span><span class="corner br"></span>
-      <img src="/assets/images/capabilities.png" width="1024" height="1024" alt="抽象模組拼貼，象徵跨平台整合" />
+      <img src="/assets/images/capabilities.webp" loading="lazy" decoding="async" width="1024" height="1024" alt="抽象模組拼貼，象徵跨平台整合" />
       <div class="ribbon"><b data-i18n="workRole">WEB DEVELOPMENT · MARTECH · AUTOMATION · System Integration</b></div>
     </div>
     <div class="capabilities-copy" data-reveal>
@@ -178,7 +178,7 @@ onMounted(() => {
         <a class="lab-img-link" href="https://www.greenpeace.org.tw/donation-general-general" target="_blank" rel="noopener noreferrer" aria-label="查看 Greenpeace Taiwan 線上捐款頁面">
           <div class="lab-img">
             <span class="badge" data-i18n="badgeWork">網站</span>
-            <img src="/assets/images/lab-1.png" width="768" height="1024" alt="抽象編輯拼貼，象徵線上捐款流程" />
+            <img src="/assets/images/lab-1.webp" loading="lazy" decoding="async" width="768" height="1024" alt="抽象編輯拼貼，象徵線上捐款流程" />
           </div>
         </a>
         <div class="num-row"><span>Nº 01</span><span>Greenpeace</span></div>
@@ -192,7 +192,7 @@ onMounted(() => {
         <a class="lab-img-link" href="https://www.greenpeace.org.tw/petition-oceans-sanctuaries-mw" target="_blank" rel="noopener noreferrer" aria-label="查看 Greenpeace Taiwan 海洋保護連署頁面">
           <div class="lab-img">
             <span class="badge" data-i18n="badgeWork">網站</span>
-            <img src="/assets/images/lab-2.png" width="768" height="1024" alt="抽象編輯拼貼，象徵海洋保護倡議" />
+            <img src="/assets/images/lab-2.webp" loading="lazy" decoding="async" width="768" height="1024" alt="抽象編輯拼貼，象徵海洋保護倡議" />
           </div>
         </a>
         <div class="num-row"><span>Nº 02</span><span>Greenpeace</span></div>
@@ -206,7 +206,7 @@ onMounted(() => {
         <a class="lab-img-link" href="https://github.com/newesp/myBookLM" target="_blank" rel="noopener noreferrer" aria-label="查看 myBookLM 原始碼庫">
           <div class="lab-img">
             <span class="badge">AI / RAG</span>
-            <img src="/assets/images/lab-3.png" width="768" height="1024" alt="抽象編輯拼貼，象徵知識庫問答" />
+            <img src="/assets/images/lab-3.webp" loading="lazy" decoding="async" width="768" height="1024" alt="抽象編輯拼貼，象徵知識庫問答" />
           </div>
         </a>
         <div class="num-row"><span>Nº 03</span><span>myBookLM</span></div>
@@ -220,7 +220,7 @@ onMounted(() => {
         <a class="lab-img-link" href="https://github.com/newesp/ai-social-publisher" target="_blank" rel="noopener noreferrer" aria-label="查看 ai-social-publisher 原始碼庫">
           <div class="lab-img">
             <span class="badge">AI / Agent</span>
-            <img src="/assets/images/lab-4.png" width="768" height="1024" alt="抽象編輯拼貼，象徵社群媒體發布平台" />
+            <img src="/assets/images/lab-4.webp" loading="lazy" decoding="async" width="768" height="1024" alt="抽象編輯拼貼，象徵社群媒體發布平台" />
           </div>
         </a>
         <div class="num-row"><span>Nº 04</span><span data-i18n="cardSocialTitle">AI 社群發文與 AI LINE 客服</span></div>
@@ -234,7 +234,7 @@ onMounted(() => {
         <a class="lab-img-link" href="https://github.com/newesp" target="_blank" rel="noopener noreferrer" aria-label="查看 GitHub 公開原始碼庫">
           <div class="lab-img">
             <span class="badge" data-i18n="badgeCode">Github</span>
-            <img src="/assets/images/lab-5.png" width="768" height="1024" alt="抽象編輯拼貼，象徵公開原始碼專案" />
+            <img src="/assets/images/lab-5.webp" loading="lazy" decoding="async" width="768" height="1024" alt="抽象編輯拼貼，象徵公開原始碼專案" />
           </div>
         </a>
         <div class="num-row"><span>Nº 05</span><span>GitHub</span></div>
@@ -270,7 +270,7 @@ onMounted(() => {
             <p data-i18n="feat1Desc">從故事、章節與分鏡開始，接著產生 AI 圖像，最後輸出影片。</p>
             <a class="work-img-link" href="https://youtu.be/m1XNqvH0ew8" target="_blank" rel="noopener noreferrer" aria-label="觀看小說生成器展示影片">
               <div class="img">
-                <img src="/assets/images/work-1.png" width="480" height="360" alt="novel-generator 完成影片的 YouTube 縮圖" />
+                <img src="/assets/images/work-1.png" loading="lazy" decoding="async" width="480" height="360" alt="novel-generator 完成影片的 YouTube 縮圖" />
               </div>
             </a>
             <div class="meta-row">
@@ -287,7 +287,7 @@ onMounted(() => {
             <p data-i18n="feat2Desc">以台灣威力彩資料示範收集、清洗與模型訓練；重點是完整的機器學習流程，不宣稱能預測開獎結果。</p>
             <a class="work-img-link" href="https://newesp.github.io/Lottery-ML-Portfolio/" target="_blank" rel="noopener noreferrer" aria-label="查看台灣威力彩專案展示">
               <div class="img">
-                <img src="/assets/images/work-2.png" width="1200" height="600" alt="Lottery-ML-Portfolio GitHub 專案預覽圖" />
+                <img src="/assets/images/work-2.webp" loading="lazy" decoding="async" width="1200" height="600" alt="Lottery-ML-Portfolio GitHub 專案預覽圖" />
               </div>
             </a>
             <div class="meta-row">
@@ -355,25 +355,25 @@ onMounted(() => {
         <div class="num">01</div>
         <h4 data-i18n="step1Title">需求探索 <span class="arrow-r">→</span></h4>
         <p data-i18n="step1Desc">先釐清要解決的問題、限制與風險，再寫規格、排出系統架構。</p>
-        <div class="img"><img src="/assets/images/method-1.png" width="816" height="816" alt="抽象拼貼，象徵需求探索" /></div>
+        <div class="img"><img src="/assets/images/method-1.webp" loading="lazy" decoding="async" width="816" height="816" alt="抽象拼貼，象徵需求探索" /></div>
       </article>
       <article class="method-step" data-reveal>
         <div class="num">02</div>
         <h4 data-i18n="step2Title">AI 輔助開發 <span class="arrow-r">→</span></h4>
         <p data-i18n="step2Desc">依照規格使用 AI Coding 與自動化腳本完成實作。</p>
-        <div class="img"><img src="/assets/images/method-2.png" width="816" height="816" alt="抽象拼貼，象徵 AI 輔助開發" /></div>
+        <div class="img"><img src="/assets/images/method-2.webp" loading="lazy" decoding="async" width="816" height="816" alt="抽象拼貼，象徵 AI 輔助開發" /></div>
       </article>
       <article class="method-step" data-reveal>
         <div class="num">03</div>
         <h4 data-i18n="step3Title">測試與檢查 <span class="arrow-r">→</span></h4>
         <p data-i18n="step3Desc">使用 pytest、Jest、單元／整合測試、Coverage Gate 與 AI Code Review 找出問題。</p>
-        <div class="img"><img src="/assets/images/method-3.png" width="816" height="816" alt="抽象拼貼，象徵測試與除錯" /></div>
+        <div class="img"><img src="/assets/images/method-3.webp" loading="lazy" decoding="async" width="816" height="816" alt="抽象拼貼，象徵測試與除錯" /></div>
       </article>
       <article class="method-step" data-reveal>
         <div class="num">04</div>
         <h4 data-i18n="step4Title">部署與迭代</h4>
         <p data-i18n="step4Desc">透過 CI/CD、Cloud Build 與 Cloud Run 上線，再由人工驗收並持續監控。</p>
-        <div class="img"><img src="/assets/images/method-4.png" width="816" height="816" alt="抽象拼貼，象徵部署與迭代" /></div>
+        <div class="img"><img src="/assets/images/method-4.webp" loading="lazy" decoding="async" width="816" height="816" alt="抽象拼貼，象徵部署與迭代" /></div>
       </article>
     </div>
 
@@ -499,7 +499,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="testimonial-art" data-reveal="right" style="background-image: url('/assets/images/testimonial.png'); background-size: contain; background-repeat: no-repeat; background-position: center;" role="img" aria-label="抽象編輯拼貼，象徵持續學習與技術認證">
+      <div class="testimonial-art" data-reveal="right" style="background-image: url('/assets/images/testimonial.webp'); background-size: contain; background-repeat: no-repeat; background-position: center;" role="img" aria-label="抽象編輯拼貼，象徵持續學習與技術認證">
       </div>
     </div>
   </div>
@@ -524,7 +524,7 @@ onMounted(() => {
         </div>
       </div>
       <div class="cta-art" data-reveal="right">
-        <img src="/assets/images/cta.png" width="1024" height="1024" alt="抽象拼貼，象徵新的合作與產品啟動" />
+        <img src="/assets/images/cta.webp" loading="lazy" decoding="async" width="1024" height="1024" alt="抽象拼貼，象徵新的合作與產品啟動" />
         <div class="index">Nº 06</div>
         <div class="ribbon">SONG CHING LIN · FIN.</div>
       </div>
