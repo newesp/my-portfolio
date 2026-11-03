@@ -2836,3 +2836,77 @@ body {
     font-size: 30px !important;
   }
 }
+
+
+/* 8. GitHub 專案卡片 - 方案 B：純白浮空高對比卡片 */
+.is-dark .repo-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 6px !important;
+}
+
+.is-dark .repo-card-title {
+  color: #12211D !important;
+  font-weight: 700 !important;
+}
+
+.is-dark .repo-card-badge {
+  background: #E8EFEA !important;
+  color: #4F6560 !important;
+}
+
+.is-dark .repo-card-badge.live {
+  background: rgba(31, 122, 92, 0.12) !important;
+  color: #1F7A5C !important;
+  border: 1px solid rgba(31, 122, 92, 0.25) !important;
+}
+
+.is-dark .repo-card-desc {
+  color: #4F6560 !important;
+  line-height: 1.6 !important;
+}
+
+.is-dark .repo-card-meta {
+  color: #6E8780 !important;
+}
+
+.is-dark .repo-card-tags span {
+  background: #E8EFEA !important;
+  color: #12211D !important;
+  border: 1px solid rgba(31, 122, 92, 0.15) !important;
+}
+
+.is-dark .repo-card-links {
+  border-top: 1px solid #E2EBE6 !important;
+}
+
+.is-dark .repo-card-links a {
+  color: #1F7A5C !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
+}
+
+.is-dark .repo-card-links a:hover {
+  color: #0E2F2A !important;
+  border-bottom-color: #0E2F2A !important;
+}
+
+.is-dark .page-button {
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #12211D !important;
+}
+
+.is-dark .page-button:hover:not(:disabled) {
+  border-color: #C6F432 !important;
+  color: #1F7A5C !important;
+}
+
+.is-dark .page-button[aria-current="page"] {
+  background: #C6F432 !important;
+  color: #0E2F2A !important;
+  border-color: #C6F432 !important;
+  font-weight: 700 !important;
+}
