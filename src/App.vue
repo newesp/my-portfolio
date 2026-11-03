@@ -113,7 +113,7 @@ onMounted(() => {
 </section>
 
 <!-- SECTION II: PROFESSIONAL WORK -->
-<section class="capabilities" id="professional-work" data-od-id="professional-work">
+<section class="capabilities is-alt" id="professional-work" data-od-id="professional-work">
   <div class="container"><div class="sec-rule"><span class="roman">II.</span><span class="meta-grp"><span data-i18n="workSecRule">專業工作 / Greenpeace Taiwan</span><span class="dot-mark">•</span><span data-i18n="workSecSub">網站、數據、整合</span></span><span>002 / 006</span></div></div>
   <div class="container capabilities-grid">
     <div class="capabilities-art" data-reveal="left">
@@ -157,7 +157,7 @@ onMounted(() => {
 </section>
 
 <!-- SECTION III: PROJECTS -->
-<section class="labs" id="projects" data-od-id="representative-work">
+<section class="labs is-dark" id="projects" data-od-id="representative-work">
   <div class="container"><div class="sec-rule"><span class="roman">III.</span><span class="meta-grp"><span data-i18n="projSecRule">成果索引 / 代表性頁面與專案</span><span class="dot-mark">•</span><span>05 entries</span></span><span>003 / 006</span></div></div>
   <div class="container">
     <div class="labs-head">
@@ -341,7 +341,7 @@ onMounted(() => {
     <div class="method-head">
       <div data-reveal>
         <span class="label" data-i18n="methodLabel">工程方法 <span class="ix">· Nº 04</span></span>
-        <h2 class="display" style="margin-top:20px;" data-i18n="methodTitle">使用 AI 加速開發流程<span class="dot">.</span></h2>
+        <h2 class="display" style="margin-top:20px; white-space: nowrap;" data-i18n="methodTitle">使用 AI 加速開發流程<span class="dot">.</span></h2>
       </div>
       <div class="right" data-reveal="right">
         <span class="plus">+</span>
@@ -478,7 +478,7 @@ onMounted(() => {
 </section>
 
 <!-- SECTION V: CERTIFICATIONS -->
-<section class="testimonial" id="certifications" data-od-id="certifications">
+<section class="testimonial is-alt" id="certifications" data-od-id="certifications">
   <div class="container"><div class="sec-rule"><span class="roman">V.</span><span class="meta-grp"><span data-i18n="certsSecRule">證照與認證 / Credentials</span><span class="dot-mark">•</span><span data-i18n="certsSecSub">專業能力檢定</span></span><span>005 / 006</span></div></div>
   <div class="container">
     <div class="testimonial-grid">
@@ -506,7 +506,7 @@ onMounted(() => {
 </section>
 
 <!-- SECTION VI: CONTACT -->
-<section class="cta" id="contact" data-od-id="contact">
+<section class="cta is-dark" id="contact" data-od-id="contact">
   <div class="container"><div class="sec-rule"><span class="roman">VI.</span><span class="meta-grp"><span data-i18n="contactSecRule">聯絡 / 合作</span><span class="dot-mark">•</span><span data-i18n="contactSecSub">開始對話</span></span><span>006 / 006</span></div></div>
   <div class="container">
     <div class="cta-grid">

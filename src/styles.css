@@ -2494,3 +2494,345 @@ footer {
     margin-right: -16px;
   }
 }
+
+
+/* ==============================================================
+   VERSION C: 深森林綠 + 冷薄荷灰 (Forest Green & Cool Mint Gray)
+   ============================================================== */
+:root {
+  --bg: #F5F8F6;
+  --bg-alt: #E3EDE8;
+  --bg-dark: #0E2F2A;
+  --text: #12211D;
+  --text-muted: #4F6560;
+  --rule: #C9D9D1;
+  --accent: #1F7A5C;           /* 對比約 5:1 */
+  --text-on-dark: #EAF4EF;
+  --muted-on-dark: #8FB0A5;
+  --accent-on-dark: #C6F432;
+
+  /* styles.css 原有變數映射至通用抽象色彩 */
+  --paper: var(--bg);
+  --paper-warm: var(--bg-alt);
+  --paper-dark: var(--bg-dark);
+  --ink: var(--text);
+  --ink-soft: var(--text);
+  --ink-mute: var(--text-muted);
+  --ink-faint: var(--text-muted);
+  --coral: var(--accent);
+  --coral-soft: var(--accent);
+  --bone: #ffffff;
+  --line: var(--rule);
+  --line-soft: color-mix(in srgb, var(--rule) 55%, transparent);
+  --line-faint: color-mix(in srgb, var(--rule) 30%, transparent);
+  --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* 徹底移除原本的全域泛黃雜訊遮罩 (AI 模板感主因) */
+body::before {
+  display: none !important;
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.topbar, .nav, .wire {
+  background: color-mix(in srgb, var(--bg) 94%, transparent) !important;
+  backdrop-filter: blur(12px) !important;
+  border-color: var(--rule) !important;
+}
+.topbar-inner b, .brand, .display, .nav-links a {
+  color: var(--text) !important;
+}
+.topbar-inner .coral, .brand-mark, .label, .roman, .sec-rule .roman, .display .dot {
+  color: var(--accent) !important;
+}
+.label:before {
+  background: var(--accent) !important;
+}
+.topbar .pulse, .wire-pulse {
+  background: var(--accent) !important;
+}
+.btn-primary {
+  background: var(--accent) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px -4px color-mix(in srgb, var(--accent) 45%, transparent) !important;
+}
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+.btn-ghost {
+  border-color: var(--rule) !important;
+  color: var(--text) !important;
+}
+.btn-ghost:hover {
+  background: color-mix(in srgb, var(--text) 5%, transparent) !important;
+}
+.hero-art .index {
+  background: color-mix(in srgb, var(--bg) 90%, transparent) !important;
+  border-color: var(--rule) !important;
+}
+.hero-art .index span.on {
+  color: var(--text) !important;
+}
+.hero-art .index span .n {
+  color: var(--accent) !important;
+}
+
+/* 4. 區塊修飾：次級淺色 (.is-alt) */
+.is-alt {
+  --bg: var(--bg-alt);
+  --paper: var(--bg-alt);
+  --bone: #ffffff;
+  background: var(--bg-alt) !important;
+  color: var(--text) !important;
+}
+.is-alt .card,
+.is-alt .cert-card-wrap {
+  background: #ffffff !important;
+  border: 1px solid var(--rule) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04) !important;
+}
+.is-alt .card:hover {
+  border-color: var(--accent) !important;
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.08) !important;
+}
+.is-alt .card .num {
+  color: var(--accent) !important;
+}
+.is-alt .card .arrow-mark {
+  border-color: var(--rule) !important;
+  color: var(--text) !important;
+}
+.is-alt .card:hover .arrow-mark {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #ffffff !important;
+}
+.is-alt .cert-btn {
+  background: var(--text) !important;
+  color: #ffffff !important;
+}
+.is-alt .cert-btn:hover {
+  background: var(--accent) !important;
+  color: #ffffff !important;
+}
+
+/* 5. 區塊修飾：深色區塊 (.is-dark) */
+.is-dark {
+  --bg: var(--bg-dark);
+  --paper: var(--bg-dark);
+  --text: var(--text-on-dark);
+  --ink: var(--text-on-dark);
+  --ink-soft: var(--text-on-dark);
+  --text-muted: var(--muted-on-dark);
+  --ink-mute: var(--muted-on-dark);
+  --ink-faint: var(--muted-on-dark);
+  --rule: rgba(255, 255, 255, 0.18);   /* 細線在深底改成半透明白 */
+  --line: rgba(255, 255, 255, 0.18);
+  --line-soft: rgba(255, 255, 255, 0.1);
+  --line-faint: rgba(255, 255, 255, 0.06);
+  --accent: var(--accent-on-dark);
+  --coral: var(--accent-on-dark);
+  --bone: color-mix(in srgb, var(--bg-dark) 85%, white);
+  background: var(--bg-dark) !important;
+  color: var(--text-on-dark) !important;
+}
+
+.is-dark .display, .is-dark h2, .is-dark h3, .is-dark h4 {
+  color: var(--text-on-dark) !important;
+}
+.is-dark .lead, .is-dark p {
+  color: var(--muted-on-dark) !important;
+}
+.is-dark .sec-rule {
+  border-color: var(--rule) !important;
+  color: var(--muted-on-dark) !important;
+}
+.is-dark .sec-rule .roman,
+.is-dark .label,
+.is-dark .display .dot,
+.is-dark .num,
+.is-dark em {
+  color: var(--accent-on-dark) !important;
+}
+.is-dark .label:before {
+  background: var(--accent-on-dark) !important;
+}
+
+/* 深底下的卡片與清單 (Labs & Projects) */
+.is-dark .card,
+.is-dark .lab-img {
+  background: color-mix(in srgb, var(--bg-dark) 85%, white) !important;
+  border: 1px solid var(--rule) !important;
+}
+.is-dark .lab h4 {
+  color: var(--text-on-dark) !important;
+}
+.is-dark .lab .num-row {
+  color: var(--muted-on-dark) !important;
+}
+.is-dark .lab .badge {
+  background: rgba(0, 0, 0, 0.65) !important;
+  color: var(--accent-on-dark) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(4px) !important;
+}
+.is-dark .lab .arrow-mark {
+  border-color: var(--rule) !important;
+  color: var(--text-on-dark) !important;
+}
+.is-dark .lab:hover .arrow-mark {
+  background: var(--accent-on-dark) !important;
+  border-color: var(--accent-on-dark) !important;
+  color: var(--bg-dark) !important;
+}
+
+/* 深底下的按鈕 (主按鈕反轉為深底高對比) */
+.is-dark .btn-primary {
+  background: var(--accent-on-dark) !important;
+  color: var(--bg-dark) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 6px 20px -4px color-mix(in srgb, var(--accent-on-dark) 40%, transparent) !important;
+}
+.is-dark .btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+.is-dark .btn-ghost {
+  border-color: var(--rule) !important;
+  color: var(--text-on-dark) !important;
+}
+.is-dark .email-pill {
+  border-color: var(--rule) !important;
+  color: var(--text-on-dark) !important;
+}
+.is-dark .email-pill .arrow-circle {
+  background: var(--accent-on-dark) !important;
+  color: var(--bg-dark) !important;
+}
+
+/* 深底下的 .work 區塊 (精選 AI 專案) */
+.is-dark .work {
+  background: rgba(0, 0, 0, 0.28) !important;
+  border: 1px solid var(--rule) !important;
+  margin: 0 !important;
+  padding: 80px 48px !important;
+}
+.is-dark .work:before {
+  opacity: 0.08 !important;
+}
+
+/* 修復 VI section "查看所有公開專案" 文字顏色，確保與背景有明確區隔 */
+.is-dark .work-link,
+.work-link {
+  color: var(--text-on-dark) !important;
+  border-bottom: 2px solid var(--accent-on-dark) !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding-bottom: 8px !important;
+  font-weight: 600 !important;
+  font-size: 14.5px !important;
+  transition: all 0.2s ease !important;
+}
+.is-dark .work-link:after,
+.work-link:after {
+  content: '↗' !important;
+  color: var(--accent-on-dark) !important;
+  font-size: 15px !important;
+}
+.is-dark .work-link:hover,
+.work-link:hover {
+  color: var(--accent-on-dark) !important;
+  border-bottom-color: var(--accent-on-dark) !important;
+  transform: translateX(4px) !important;
+}
+
+.is-dark .work-card {
+  background: color-mix(in srgb, var(--bg-dark) 85%, white) !important;
+  border: 1px solid var(--rule) !important;
+  color: var(--text-on-dark) !important;
+}
+.is-dark .work-card h3 {
+  color: var(--text-on-dark) !important;
+}
+.is-dark .work-card p {
+  color: var(--muted-on-dark) !important;
+}
+.is-dark .work-card .small-label {
+  color: var(--accent-on-dark) !important;
+}
+.is-dark .work-card .img {
+  background: var(--bg-dark) !important;
+}
+.is-dark .work-card .meta-row {
+  border-color: var(--rule) !important;
+  color: var(--muted-on-dark) !important;
+}
+
+/* 深底下的 GitHub Pipeline 搜尋輸入框 */
+.is-dark .gh-search-input {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: var(--rule) !important;
+  color: var(--text-on-dark) !important;
+}
+.is-dark .gh-search-input:focus {
+  border-color: var(--accent-on-dark) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-on-dark) 25%, transparent) !important;
+}
+.is-dark .gh-title-group h3 {
+  color: var(--text-on-dark) !important;
+}
+.is-dark .gh-title-group span.kicker {
+  color: var(--accent-on-dark) !important;
+}
+
+/* 6. 深色區塊拼貼圖片處理（防止米色邊緣出現突兀邊框） */
+.is-dark .cta-art img {
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--rule);
+  filter: contrast(1.05) brightness(0.92);
+}
+.is-dark .lab-img img {
+  filter: contrast(1.05) brightness(0.95);
+}
+
+/* 7. GLightbox 遮罩與文字 (徹底移除舊暖色) */
+.goverlay {
+  background: rgba(8, 12, 20, 0.94) !important;
+  backdrop-filter: blur(10px) !important;
+}
+.glightbox-clean .gslide-description {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+.glightbox-clean .gslide-title {
+  color: var(--text) !important;
+  font-family: var(--sans) !important;
+}
+.glightbox-clean .gslide-desc {
+  color: var(--text-muted) !important;
+}
+.glightbox-clean .gclose path,
+.glightbox-clean .gnext path,
+.glightbox-clean .gprev path {
+  fill: #ffffff !important;
+}
+
+/* IV section 標題不要換行 (使用 AI 加速開發流程.) */
+.method-head h2 {
+  white-space: nowrap !important;
+  font-size: clamp(28px, 3.8vw, 64px) !important;
+}
+@media (max-width: 680px) {
+  .method-head h2 {
+    white-space: normal !important;
+    word-break: keep-all;
+    font-size: 30px !important;
+  }
+}
